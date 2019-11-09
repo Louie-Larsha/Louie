@@ -1,0 +1,19 @@
+x = input()
+y = input()
+z0 = 'J'
+z1 = 'O'
+z2 = 'H'
+z3 = 'N'
+p0 = 'j'
+p1 = 'o'
+p2 = 'h'
+p3 = 'n'
+v0 = x.count(z0) + x.count(p0) -y.count(z0) - y.count(p0)
+v1 = x.count(z1) + x.count(p1)-y.count(z1) - y.count(p1)
+v2 = x.count(z2)+ x.count(p2) -y.count(z2) -  y.count(p2)
+v3 = x.count(z3)+ x.count(p3) -y.count(z3) -  y.count(p3)
+k0 = y.count(z0) + y.count(p0)
+k1 = y.count(z1) + y.count(p1)
+k2 = y.count(z2) + y.count(p2)
+k3 = y.count(z3) + y.count(p3)
+print(v0+v1+v2+v3, k0+k1+k2+k3)
